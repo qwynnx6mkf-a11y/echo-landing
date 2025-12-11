@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Echo - Resonate with Your Memories</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .serif { font-family: 'Noto Serif', serif; }
+        .gradient-bg {
+            background: radial-gradient(circle at 50% 50%, #2e1065 0%, #0f172a 50%, #000000 100%);
+        }
+    </style>
+</head>
+<body class="bg-black text-gray-100 antialiased selection:bg-purple-500 selection:text-white">
+
+    <nav class="fixed w-full z-50 bg-black/50 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <div class="text-2xl font-bold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-300">
+                Echo
+            </div>
+            <div class="flex items-center space-x-6 text-sm text-gray-400">
+                <a href="index.html" class="text-white border border-white/20 px-2 py-1 rounded hover:bg-white/10 transition text-xs">中文</a>
+                
+                <div class="hidden md:flex space-x-6">
+                    <a href="#features" class="hover:text-white transition">Features</a>
+                    <a href="privacy_en.html" class="hover:text-white transition">Privacy</a>
+                    <a href="mailto:support@echo.app" class="hover:text-white transition">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="relative min-h-screen flex items-center justify-center gradient-bg overflow-hidden text-center px-6">
+        <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-600/30 rounded-full blur-3xl animate-pulse"></div>
+        <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-600/20 rounded-full blur-3xl"></div>
+
+        <div class="relative z-10 max-w-3xl mx-auto space-y-8">
+            <h1 class="serif text-5xl md:text-7xl font-bold leading-tight text-transparent bg-clip-text bg-gradient-to-br from-white via-gray-200 to-gray-500">
+                Echoes of the Soul.
+            </h1>
+            <p class="text-lg md:text-xl text-gray-400 font-light leading-relaxed">
+                More than just storage.<br>
+                We transform your precious memories into a conversational soulmate.
+            </p>
+            
+            <div class="flex flex-col md:flex-row items-center justify-center gap-4 pt-8">
+                <button class="px-8 py-3 bg-white text-black rounded-full font-semibold hover:bg-gray-200 transition w-full md:w-auto">
+                    Pre-order on App Store
+                </button>
+                <button class="px-8 py-3 border border-white/20 bg-white/5 backdrop-blur-sm rounded-full font-semibold hover:bg-white/10 transition w-full md:w-auto">
+                    Join Android Waitlist
+                </button>
+            </div>
+            <p class="text-xs text-gray-500 pt-4">Coming Soon · E2E Encrypted</p>
+        </div>
+    </section>
+
+    <section id="features" class="py-24 bg-gray-900">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+            
+            <div class="space-y-6">
+                <h3 class="text-3xl font-bold text-white">Memory Capsule</h3>
+                <p class="text-gray-400 leading-relaxed">
+                    Chat logs, faded photos, voice clips... Seal your fragmented moments into Echo. 
+                    Securely stored, accessible only by you.
+                </p>
+            </div>
+            <div class="h-64 bg-gray-800 rounded-2xl border border-white/5 flex items-center justify-center">
+                <span class="text-gray-600">[App Screenshot Placeholder]</span>
+            </div>
+
+            <div class="h-64 bg-gray-800 rounded-2xl border border-white/5 flex items-center justify-center md:order-last">
+                <span class="text-gray-600">[Chat Screenshot Placeholder]</span>
+            </div>
+            <div class="space-y-6">
+                <h3 class="text-3xl font-bold text-white">Soul Extraction</h3>
+                <p class="text-gray-400 leading-relaxed">
+                    Powered by LLM technology, Echo analyzes your memories to reconstruct the personality and tone of the past. 
+                    Talk to them again, across time.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black py-12 border-t border-white/10 text-center">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-2xl font-bold mb-6 text-white">Echo</h2>
+            <div class="flex justify-center space-x-6 mb-8 text-sm text-gray-500">
+                <a href="privacy_en.html" class="hover:text-purple-400 transition">Privacy Policy</a>
+                <a href="#" class="hover:text-purple-400 transition">Terms</a>
+            </div>
+            <p class="text-gray-700 text-xs">
+                © 2024 Echo App. All rights reserved.<br>
+                AI-generated content is for emotional companionship only.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
